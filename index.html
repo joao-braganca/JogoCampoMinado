@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campo Minado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<select id="dificuldade">
+    <option value="0">Fácil</option>
+    <option value="1">Médio</option>
+    <option value="2">Difícil</option>
+</select>
+
+<button onclick="comecar()">comecar</button>
+
+<!-- table>tr*20.linha>td*20#botao -->
+ 
+<table id="tabela">
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+    <tr class="linha">
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+        <td id="botao"></td>
+    </tr>
+</table>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

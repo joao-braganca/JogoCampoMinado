@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    
+}
+
+#botao{
+    border: solid 1px;
+    width: 15px;
+    height: 15px;
+}
+

@@ -60,6 +60,8 @@ function comecar() {
 
         if (campo[linhaCelula][colunaCelula].bomba == 1) {
             alert("bombaaa");
+            window.location.reload();
+
         } else {
             if (campo[linhaCelula][colunaCelula].verificado == 0) {
                 

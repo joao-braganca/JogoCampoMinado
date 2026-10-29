@@ -8,17 +8,21 @@
 </head>
 
 <body>
-<select id="dificuldade">
-    <option value="0">Fácil</option>
-    <option value="1">Médio</option>
-    <option value="2">Difícil</option>
-</select>
+    <div>
 
-<button onclick="comecar()">comecar</button>
+        <select id="dificuldade">
+            <option value="0">Fácil</option>
+            <option value="1">Médio</option>
+            <option value="2">Difícil</option>
+        </select>
+        
+        <button onclick="comecar()">comecar</button>
+    </div>
 
 <!-- table>tr*20.linha>td*20#botao -->
+<div class="container">
  
-<table id="tabela">
+<table id="tabela"> 
     <tr class="linha">
         <td id="botao"></td>
         <td id="botao"></td>
@@ -275,6 +279,9 @@
         <td id="botao"></td>
     </tr>
 </table>
+    
+<div id="cobertura"></div>
+</div>
 
 </body>
 <script type="text/javascript" src="script.js"></script>
